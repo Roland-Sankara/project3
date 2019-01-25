@@ -1,0 +1,118 @@
+<!DOCTYPE html><html>
+    <head>
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="stylesheet3.css">
+        <body>
+            <h1 id="title">Survey Form</h1>
+            <div id="form-layout">
+                <p id="description">Let us know of how we can improve 
+                    this Website
+                </p>
+                <form id="survey-form" action="" method="GET">
+                    <div class="row-tab">
+                        <div class="labels">
+                            <label id="name-label" for="name">Name:</label>
+                        </div><div class="right-tab">
+                            <input type="text" name="name" id="name" class="input-field"
+                            placeholder="Enter Your Name" required>
+                        </div>
+                    </div>
+                    <div class="row-tab">
+                        <div class="labels">
+                            <label id="email-label" for="email">Email:</label>
+                        </div>
+                        <div class="right-tab">
+                            <input type="text" id="email" name="email" class="input-field" 
+                                placeholder="Enter Your Email" required>
+                        </div>
+                    </div>
+                    <div class="row-tab">
+                        <div class="labels">
+                            <label id="number-label" for="Age">Age:</label>
+                        </div>
+                        <div class="right-tab">
+                            <input type="number" id="number" class="input-field"
+                                placeholder="Age" name="Age" min="1" max="125" required>
+                        </div>
+                    </div>
+                    <div class="row-tab">
+                        <div class="labels">
+                            <label for="current-status">What option Best describes
+                                    your current-status?
+                                </label>
+                        </div>
+                        <div class="right-tab">
+                            <select name="current-status" id="dropdown">
+                                    <option>Select an option</option>
+                                    <option value="Student">Student</option>
+                                    <option value="job">Employed</option>
+                                    <option value="skill">Web developer</option>
+                                    <option value="perferno">Prefer Not to say</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row-tab">
+                        <div class="labels">
+                            <label for="how-web-is">How do you find the website?</label>
+                        </div>
+                        <div class="right-tab">
+                            <ul>
+                                <li class="radio">
+                                    <label>
+                                        <input type="radio" name="radio-buttons" value="1" class="user-ratings">Fantastic
+                                    </label>
+                                </li>
+                                <li class="radio">
+                                    <label>
+                                        <input type="radio" name="radio-buttons" value="2" class="user-ratings">Impressive
+                                    </label>
+                                </li>
+                                <li class="radio">
+                                    <label>
+                                        <input type="radio" name="radio-buttons" value="3" class="user-ratings">Not Sure
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row-tab">
+                        <div class="labels">
+                            <label for="feature-to-add">What should we Improve on the website?                               
+                            </label>
+                        </div>
+                        <div class="right-tab">
+                            <ul id="feature-to-add">
+                                <li class="checkbox">
+                                    <label>
+                                        <input type="checkbox" name="future" value="1" class="user-ratings">Video-Conferencing
+                                    </label>
+                                </li>
+                                <li class="checkbox">
+                                    <label>
+                                        <input type="checkbox" name="future" value="2" class="user-ratings">Wiki
+                                    </label>
+                                </li>
+                                <li class="checkbox">
+                                    <label>
+                                        <input type="checkbox" name="future" value="3" class="user-ratings">Forum
+                                    </label>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row-tab">
+                        <div class="labels">
+                            <label for="comments">Add a Comment or Suggestion.</label>
+                        </div>
+                        <div class="right-tab">
+                            <textarea name="comment" id="comments" cols="40" rows="5" placeholder="Enter your comment here......."></textarea>
+                        </div>
+                    </div>
+                    <button id="submit" type="submit">Submit</button>
+                </form>
+
+            </div>
+        </body>
+    </head>
+</html>
